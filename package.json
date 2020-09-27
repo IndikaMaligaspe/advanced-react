@@ -12,6 +12,7 @@
     "test": "jest --watch"
   },
   "jest": {
+    "scriptPreprocessor": "./node_modules/babel-jest",
     "verbose": true,
     "testPathDirs": [
       "./lib/__tests__"
@@ -37,6 +38,7 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -45,8 +47,9 @@
     "ejs": "^3.1.5",
     "eslint": "^7.10.0",
     "express": "^4.17.1",
-    "jest": "^26.4.2",
+    "jest-cli": "^26.4.2",
     "react": "^16.13.1",
+    "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.13.1",
     "webpack": "^4.44.2"
   },
