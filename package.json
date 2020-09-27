@@ -8,7 +8,14 @@
   },
   "scripts": {
     "start": "nodemon ./lib/server.js --exec babel-node",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack": "webpack -wd",
+    "test": "jest --watch"
+  },
+  "jest": {
+    "verbose": true,
+    "testPathDirs": [
+      "./lib/__tests__"
+    ]
   },
   "babel": {
     "presets": [
@@ -29,11 +36,21 @@
   "homepage": "https://github.com/IndikaMaligaspe/advanced-react#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "ejs": "^3.1.5",
     "eslint": "^7.10.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^26.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
   }
 }
